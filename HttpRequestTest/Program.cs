@@ -14,6 +14,8 @@ using System.Threading.Tasks;
 using System.Net.Http.Headers;
 using IdentityModel.Client; //https://developer.joyful.org/docs/example-bearer-token
 
+//postman api testing https://www.c-sharpcorner.com/article/automated-api-testing-with-postman/
+
 namespace HttpRequestTest
 {
     public class Repository
@@ -113,7 +115,7 @@ namespace HttpRequestTest
             var responseString = await response.Content.ReadAsStringAsync();
             Console.WriteLine(responseString);
         }
-
+        
         static async Task Main(string[] args)
         {
             var repos = await MakeRequest();
